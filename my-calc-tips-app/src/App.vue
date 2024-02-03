@@ -1,11 +1,13 @@
 <template>
-  <h1 class="text-3xl font-bold underline"> Hello </h1>
-  <HelloWorld /> 
+  <main class="flex">
+  <navBar />
+  <tipping-payment />
+  </main>
 </template>
 
 <script setup lang="ts">
-import HelloWorld from './components/navBar.vue'
-
+import navBar from './components/navBar.vue'
+import TippingPayment from './views/TippingPayment.vue'
 
 </script>
 

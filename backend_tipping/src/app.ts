@@ -1,12 +1,17 @@
 import express from 'express';
 import bodyParser from 'body-parser';
+import cors from 'cors';
 import router from './routes/routes';
 
 const app = express();
 const port = 3000;
 
+// Middleware para permitir CORS
+app.use(cors());
+
 // Middleware para manejar solicitudes JSON
 app.use(bodyParser.json());
+
 
 // Rutas de propinas
 app.use('/api/tipping', router);
