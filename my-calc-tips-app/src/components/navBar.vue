@@ -56,7 +56,7 @@ export default {
 				{ icon: '📋', name: 'Registros' },
 				// ... Agrega más secciones según tus necesidades
 			],
-			selectedSection: null,
+			selectedSection: 1,
 		};
 	},
 	methods: {
